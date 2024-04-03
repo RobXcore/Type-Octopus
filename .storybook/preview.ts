@@ -4,7 +4,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
 /* TODO: update import for your custom theme configurations */
-import { LightTheme, DarkTheme } from '../src/themes'
+import { LightTheme, DarkTheme} from '../src/styles/themes'
 
 /* TODO: replace with your own global styles, or remove */
 const GlobalStyles = createGlobalStyle`
@@ -28,7 +28,7 @@ const preview: Preview = {
       light: LightTheme,
       dark: DarkTheme,
     },
-    defaultTheme: 'light',
+    defaultTheme: 'dark',
     Provider: ThemeProvider,
     GlobalStyles,
     })]
